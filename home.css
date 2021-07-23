@@ -1,0 +1,284 @@
+/* 
+body{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: linear-gradient(to bottom left, #74A3FF, white);
+    background-repeat: no-repeat;
+    background-size: auto;
+} */
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* overflow-x: hidden; */
+    background: #8fbcff;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    
+    overflow-y: scroll;
+    display: flex;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+
+/* .area{
+    background: #4e54c8;  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    
+    
+    
+} */
+
+.circles{
+    position: flex;
+    flex-wrap: wrap;
+     width: 100%;
+     height: 100%;
+    overflow: hidden;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 25s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+
+}
+
+.wrapper{
+    z-index: 1;
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.logo{
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 30vh;
+    height: 20vh;
+    justify-content: center;
+    
+}
+
+#i1{
+    z-index: 1;
+
+    height: 35vh;
+    margin: 3vh;
+}
+
+.image{
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vh;
+}
+
+#i2{
+    z-index: 1;
+
+    width: 100vh; 
+    margin-top: 3vh;
+    padding-top: 7vh;
+} 
+
+.text{
+    z-index: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 70vh;
+    margin-top: -45vh;
+    margin-bottom: 10vh;
+}
+
+p{
+    z-index: 1;
+
+    text-align: center;
+    font-size: 4vh;
+    font-family: Questrial;
+    color: #001aff;
+    width: 53vh;
+    line-height: 6vh;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    color:#19173d;
+}
+.card-btn{
+    padding: 5px 15px;
+    opacity: 50%;
+    border-radius: 10px;
+    font-size: 18px;
+    
+}
+.button {
+    border-radius: 12vh;
+    
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 2px solid #001aff;
+    color: #001aff;
+    text-align: center;
+    font-size: 3.5vh;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  
+  .button:hover{
+    background-color: #f4511e;
+    border: 2px solid white;
+    color: white;
+  }
+
+@media only screen and (max-width:1160px){
+    .text{
+        justify-content: left;  
+    }
+    p{
+        font-size: 3.5vh;
+    }
+    
+    
+}
+@media only screen and (max-width:852px){
+    .text{
+        margin-top: 0;
+        justify-content: center;
+        width: 100%;
+    }
+    p{
+        font-size: 4vh;
+
+    }
+
+}
+@media only screen and (max-width:425px){
+    .wrapper{
+        margin-left: 12vh;
+    }
+    .text{
+        margin-left: 12vh;
+    }
+}
