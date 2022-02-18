@@ -16,64 +16,28 @@
         </div>
         <div class="box">
             <form name="quiz" id="quiz">
-                <p id="Q1">
-                    <h2>Question 1</h2>
-                    <p>Which loop is not present in c++  ? </p>
-                    <p><input type="radio" name="q1" value="for">1. For</p>
-                    <p><input type="radio" name="q1" value="while">2. While</p>
-                    <p><input type="radio" name="q1" value="doWhile">3. doWhile</p>
-                    <p><input type="radio" name="q1" value="forEach">4. forEach</p>
-                </p>
-                <br>
-                <p id="Q2">
-                    <h2>Question 2</h2>
-                    <p>Select the property used to create space between the element’s border and inner content?</p>
-                    <p><input type="radio" name="q2" value="border">1.  border</p>
-                    <p><input type="radio" name="q2" value="margin">2.  margin</p>
-                    <p><input type="radio" name="q2" value="padding">3. padding</p>
-                    <p><input type="radio" name="q2" value="spacing">4. spacing</p>
-          
-                </p>
-                <br>
-                <p id="Q3">
-                    <h2>Question 3</h2>
-                    <p>In CSS, what is the correct option to select all the tags on a page?</p>
-                    <p><input type="radio" name="q3" value="p{}">1.  p { }</p>
-                    <p><input type="radio" name="q3" value="#p{}">2. #p { }</p>
-                    <p><input type="radio" name="q3" value=".p{}">3. .p { }</p>
-                    <p><input type="radio" name="q3" value="<p>{}"> 4. &lt;p&gt; { }</p>
-                </p>
-                <br>
-                <p id="Q4">
-                    <h2>Question 4</h2>
-                    <p>Which attribute is used to name an element uniquely?</p>
-                    <p><input type="radio" name="q4" value="class">1. class</p>
-                    <p><input type="radio" name="q4" value="id">2. id</p>
-                    <p><input type="radio" name="q4" value="dot">3. dot</p>
-                    <p><input type="radio" name="q4" value="all">4. all of the above</p>
-                </p>
-                <br>
-                <p id="Q5">
-                    <h2>Question 5</h2>
-                    <p>Which of the following tag represents a piece of content that is only slightly related to the rest of the page in HTML5?</p>
-                    <p><input type="radio" name="q5" value="section">1. section</p>
-                    <p><input type="radio" name="q5" value="article">2. article</p>
-                    <p><input type="radio" name="q5" value="aside">3. aside</p>
-                    <p><input type="radio" name="q5" value="header">4. header</p>
+                
+                                    
                     <input class="btn" type="button" value="Submit" onclick="check()">
                     <input class="btn" type="reset" value="Reset">
-                </p>
+                
             </form>
         </div>
 
         <div class="result">
             <p><h2>Congratulations Kwizard</h2><br> You have completed the Quiz.</p>
-        <p> You have scored &nbsp;</p><p id="marks"></p>
-        </div>
+        <p> You have scored &nbsp;<p id="marks"></p></p>
     </div>
 
 
     <script src="question.js">
     </script>
+    <script src="question2.js">
+    </script>
+   
+    <script>
+    window.onbeforeunload = function() {
+        alert("you can not refresh the page");
+    }</script>
 </body>
 </html>
